@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IMT Kalkulator</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/ba5dd8b181.js" crossorigin="anonymous"></script>
+
+    <!-- style khusus -->
+    <style>
+      #menu-toggle:checked + #menu {
+        display: block;
+      }
+
+        /* Opasitas gambar saat tidak dipilih */
+        input[type="radio"]:not(:checked) + label > img {
+            opacity: 0.5;
+        }
+        /* Mengembalikan opasitas normal saat dipilih */
+        input[type="radio"]:checked + label > img {
+            opacity: 1;
+        }
+        
+    </style>
+  </head>
+  <body>
+    <!-- navbar -->
+    <header class="lg:px-16 px-6 bg-white flex flex-wrap items-center pb-3 pt-1 md:pb-1">
+      <div class="flex-1 flex justify-between items-center">
+        <img src="dist/assets/logoCompany.jpg" class="w-20 md:w-24 pt-2 md:pt-1 md:w-12 md:ml-5 -ml-2 rounded-full" alt="logo" />
+      </div>
+
+      <label for="menu-toggle" class="cursor-pointer lg:hidden block"
+        ><svg class="fill-current text-gray-900" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+          <title>menu</title>
+          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg
+      ></label>
+      <input class="hidden" type="checkbox" id="menu-toggle" />
+
+      <div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
+        <nav class="md:pt-1 md:mr-5">
+          <ul class="lg:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-2 lg:pt-0 md:text-sm font-poppins">
+            <li class="nav__item">
+              <a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-amber-600 hover:text-amber-600 active-link" href="#home">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-amber-600 hover:text-amber-600" href="profile.html">ABOUT</a>
+            </li>
+            <!-- <li>
+              <a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-amber-600 hover:text-amber-600" href="#MessageUs">IMT BALITA</a>
+            </li> -->
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- end navbar -->
+
+    <!-- Content -->
+    <main class="mb-16">
+        <div class="max-w-md mx-auto bg-white rounded-xl drop-shadow-lg overflow-hidden">
+          <div class="">
+            <div class="p-8">
+              <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold text-center">Stunting Kalkulator</div>
+              <form class="mt-6">
+                <div class="mt-5 flex items-center justify-center">
+                    <!-- <label for="jeniskelamin" class="block text-sm font-medium text-gray-700 mr-2">Jenis Kelamin:</label> -->
+                    <div class="flex items-center">
+                        <input type="radio" id="pria" name="jeniskelamin" value="pria" class="mr-1 hidden">
+                        <label for="pria" class="mr-2 cursor-pointer">
+                          <img src="boy.png" alt="Pria" class="w-25 h-20 hover:scale-110 transition-transform duration-300 ease-in-out">
+                          <p class="text-center text-md font-sans">Laki-laki</p>
+                        </label>
+                      </div>
+                      <div class="flex items-center ml-6">
+                        <input type="radio" id="wanita" name="jeniskelamin" value="wanita" class="mr-1 hidden">
+                        <label for="wanita" class="mr-2 cursor-pointer">
+                          <img src="girl3.png" alt="Wanita" class="w-25 h-20 hover:scale-110 transition-transform duration-300 ease-in-out">
+                          <p class="text-center text-md font-sans">Perempuan</p>
+                        </label>
+                      </div>
+                </div>
+                <div class="mt-5">
+                  <label for="beratbadan" class="block text-sm font-medium text-gray-700">Berat Badan (kg)</label>
+                  <input type="number" id="username" name="username" placeholder="Masukkan Berat Badan" class="mt-1 p-2 w-full border-gray-300 rounded-md drop-shadow-md" required/>
+                </div>
+                <div class="mt-5">
+                  <label for="tinggibadan" class="block text-sm font-medium text-gray-700">Tinggi Badan (cm)</label>
+                  <input type="number" id="email" name="email" placeholder="Masukkan Tinggi Badan" class="mt-1 p-2 w-full border-gray-300 rounded-md drop-shadow-md" required/>
+                </div>
+                <div class="mt-5">
+                  <label for="umur" class="block text-sm font-medium text-gray-700">Umur (bulan)</label>
+                  <input type="number" id="password" name="password" placeholder="Masukkan Umur" class="mt-1 p-2 w-full border-gray-300 rounded-md drop-shadow-md" required/>
+                </div>
+                <div class="mt-7">
+                  <button type="submit" class="w-full bg-indigo-600 text-white p-3 rounded-md"><i class="fa-solid fa-paper-plane"></i> Hitung Stunting <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                <div class="mt-7">
+                    <label for="tinggibadan" class="block text-sm font-medium text-gray-700">TB/U (Stunting)</label>
+                    <input type="number" id="email" name="email" class="mt-1 p-2 w-full border-gray-300 rounded-md drop-shadow-md" readonly />
+                  </div>
+                  <div class="mt-5 mb-4">
+                    <label for="umur" class="block text-sm font-medium text-gray-700">Index Massa Tubuh</label>
+                    <input type="number" id="password" name="password" class="mt-1 p-2 w-full border-gray-300 rounded-md drop-shadow-md" readonly />
+                  </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+  </body>
+</html>
