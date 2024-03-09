@@ -91,26 +91,26 @@
                 </div>
                 <div class="mt-5">
                   <label for="beratbadan" class="block text-sm font-medium text-gray-700">Berat Badan (kg)</label>
-                  <input type="number" id="username" name="username" placeholder="Masukkan Berat Badan" class="mt-1 p-2 w-full border-gray-300 rounded-md drop-shadow-md" required/>
+                  <input type="number" name="berat" id="berat" placeholder="Masukkan Berat Badan" class="mt-1 p-2 w-full border-gray-300 rounded-md drop-shadow-md" required/>
                 </div>
                 <div class="mt-5">
                   <label for="tinggibadan" class="block text-sm font-medium text-gray-700">Tinggi Badan (cm)</label>
-                  <input type="number" id="email" name="email" placeholder="Masukkan Tinggi Badan" class="mt-1 p-2 w-full border-gray-300 rounded-md drop-shadow-md" required/>
+                  <input type="number" name="tinggi" id="tinggi" placeholder="Masukkan Tinggi Badan" class="mt-1 p-2 w-full border-gray-300 rounded-md drop-shadow-md" required/>
                 </div>
                 <div class="mt-5">
                   <label for="umur" class="block text-sm font-medium text-gray-700">Umur (bulan)</label>
-                  <input type="number" id="password" name="password" placeholder="Masukkan Umur" class="mt-1 p-2 w-full border-gray-300 rounded-md drop-shadow-md" required/>
+                  <input type="number" name="umur" id="umur" placeholder="Masukkan Umur" class="mt-1 p-2 w-full border-gray-300 rounded-md drop-shadow-md" required/>
                 </div>
                 <div class="mt-7">
                   <button type="submit" class="w-full bg-indigo-600 text-white p-3 rounded-md"><i class="fa-solid fa-paper-plane"></i> Hitung Stunting <i class="fa-solid fa-arrow-right"></i></button>
                 </div>
                 <div class="mt-7">
-                    <label for="tinggibadan" class="block text-sm font-medium text-gray-700">TB/U (Stunting)</label>
-                    <input type="number" id="email" name="email" class="mt-1 p-2 w-full border-gray-300 rounded-md drop-shadow-md" readonly />
+                    <label for="tbu" class="block text-sm font-medium text-gray-700">TB/U (Stunting)</label>
+                    <input type="text" name="tbu" id="tbu" class="mt-1 p-2 w-full border-gray-300 rounded-md drop-shadow-md" readonly />
                   </div>
                   <div class="mt-5 mb-4">
-                    <label for="umur" class="block text-sm font-medium text-gray-700">Index Massa Tubuh</label>
-                    <input type="number" id="password" name="password" class="mt-1 p-2 w-full border-gray-300 rounded-md drop-shadow-md" readonly />
+                    <label for="imt" class="block text-sm font-medium text-gray-700">Index Massa Tubuh</label>
+                    <input type="text" name="imt" id="imt" class="mt-1 p-2 w-full border-gray-300 rounded-md drop-shadow-md" readonly />
                   </div>
               </form>
             </div>
@@ -119,5 +119,6 @@
       </div>
     </main>
 
+    <script src="hitung.js"></script>
   </body>
 </html>
