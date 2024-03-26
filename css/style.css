@@ -1,0 +1,12 @@
+#menu-toggle:checked + #menu {
+    display: block;
+  }
+
+/* Opasitas gambar saat tidak dipilih */
+input[type="radio"]:not(:checked) + label > img {
+    opacity: 0.5;
+}
+/* Mengembalikan opasitas normal saat dipilih */
+input[type="radio"]:checked + label > img {
+    opacity: 1;
+}

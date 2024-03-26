@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scrollable Layouts with Tailwind CSS</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="flex flex-col h-screen overflow-y-scroll">
+        <div class="flex-grow bg-gray-200 p-4">
+          <div class="max-w-xl mx-auto">
+            <h1 class="text-3xl font-bold mb-4">Halodoc BMI Kalkulator</h1>
+            <p class="text-xl mb-4">Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu? Yuk, hitung sekarang di BMI Kalkulator.</p>
+            <form class="mb-4">
+              <div class="mb-2">
+                <label for="height" class="text-lg font-semibold">Tinggi (cm)</label>
+                <input type="text" id="height" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" value="169">
+              </div>
+              <div class="mb-2">
+                <label for="weight" class="text-lg font-semibold">Berat (kg)</label>
+                <input type="text" id="weight" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" value="49">
+              </div>
+              <button type="submit" class="w-full py-2 px-4 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">Hitung BMI</button>
+            </form>
+            <div class="bg-white p-4 rounded-md shadow-md">
+              <p class="text-xl font-semibold">BMI kamu: 17.2, Berat Ideal</p>
+              <p class="text-lg mt-2">Pastikan asupan kalori sesuai dengan kebutuhan kalori harian & konsumsi makanan sehat</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex-grow-0 bg-gray-100 p-4">
+          <div class="max-w-xl mx-auto">
+            <h2 class="text-2xl font-bold mb-4">Keunggulan Fitur</h2>
+            <ul class="list-disc list-inside text-lg mb-4">
+              <li>BMI untuk Laki-laki</li>
+              <li>Berat Ideal</li>
+              <li>Akses cepat</li>
+              <li>Beranda</li>
+              <li>Artikel</li>
+              <li>Chat dengan Dokter</li>
+              <li>Toko Kesehatan</li>
+              <li>Aplikasi</li>
+              <li>Buat Janji RS</li>
+              <li>Cari Dokter</li>
+            </ul>
+            <p class="text-lg">Diet yang baik dapat mempertahankan kesehatan & imun. Konsultasi Ahli Gizi</p>
+          </div>
+        </div>
+        <div class="flex-grow-0 bg-gray-200 p-4">
+          <div class="max-w-xl mx-auto">
+            <h2 class="text-2xl font-bold mb-4">Bagikan</h2>
+            <div class="flex space-x-
+  </body>
+</html>
